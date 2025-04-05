@@ -1,0 +1,102 @@
+/* Define estilos gerais para o corpo da página */
+body {
+  background-color: black; /* Fundo preto */
+  color: white;            /* Texto branco */
+  font-family: sans-serif; /* Fonte padrão sem serifa */
+}
+
+/* Estiliza o cabeçalho (header) da página */
+header {
+  background-color: #ea580c; /* Laranja forte */
+  padding: 1rem;             /* Espaçamento interno */
+  display: flex;             /* Ativa o layout flexível */
+  justify-content: space-between; /* Espaça os elementos entre as extremidades */
+  align-items: center;       /* Alinha verticalmente ao centro */
+}
+
+/* Estiliza a foto de perfil no cabeçalho (header) da página */
+.profile-pic {
+  border-radius: 50%; /* Arredonda as bordas */
+  border: 2px solid white; /* Cria um contorno branco */
+}
+
+
+/* Estiliza o menu de navegação */
+nav {
+  background-color: #facc15;  /* Amarelo */
+  display: flex;              /* Layout flexível */
+  justify-content: space-around; /* Distribui os links igualmente */
+  padding: 0.5rem;            /* Espaçamento interno */
+}
+
+/* Estiliza os links dentro do menu de navegação */
+nav a {
+  color: black;               /* Cor do texto preta */
+  font-weight: bold;         /* Deixa o texto em negrito */
+  text-decoration: none;     /* Remove o sublinhado padrão dos links */
+}
+
+/* Área que contém filtros, colunas e botão */
+.filtros {
+  display: flex;               /* Layout flexível */
+  align-items: center;         /* Alinha verticalmente ao centro */
+  background-color: #374151;   /* Cinza escuro */
+  padding: 0.5rem;             /* Espaçamento interno */
+}
+
+/* Estiliza os ícones da área de filtros */
+.filtros i {
+  font-size: 1.5rem;           /* Tamanho maior para o ícone */
+}
+
+/* Colunas de nome, artista, etc. */
+.colunas {
+  flex-grow: 1;                /* Ocupa todo o espaço disponível */
+  display: flex;               /* Layout flexível */
+  justify-content: space-around; /* Espaça igualmente os nomes das colunas */
+  margin-left: 1 rem;           /* Espaçamento à esquerda do ícone */
+}
+
+/* Container do campo de busca */
+.pesquisa {
+  display: flex;               /* Layout flexível */
+  align-items: center;         /* Alinha verticalmente */
+  background-color: #4b5563;   /* Cinza médio */
+  padding: 0.25rem;            /* Espaçamento interno */
+  border-radius: 0.25rem;      /* Bordas arredondadas */
+  margin-left: 1rem;           /* Espaço à esquerda das colunas */
+}
+
+/* Estiliza o campo de input de texto */
+.pesquisa input {
+  background-color: #4b5563;   /* Mesmo fundo do container */
+  color: white;                /* Texto branco */
+  border: none;                /* Remove borda padrão */
+  outline: none;               /* Remove borda de foco */
+  margin-left: 0.5rem;         /* Espaço entre ícone e input */
+}
+
+/* Estiliza o botão "Adicionar +" */
+button {
+  background-color: #dc2626;   /* Vermelho escuro */
+  color: white;                /* Texto branco */
+  padding: 0.5rem;             /* Espaçamento interno */
+  margin-left: 1rem;           /* Espaço à esquerda do campo de pesquisa */
+  border: none;                /* Remove a borda padrão */
+  cursor: pointer;             /* Muda o cursor ao passar por cima */
+}
+
+/* Estiliza a área principal onde os álbuns aparecem */
+main {
+  padding: 1rem;               /* Espaçamento interno */
+  display: flex;               /* Layout flexível */
+  justify-content: left;    /* Centraliza os itens */
+  gap: 1rem;                   /* Espaço entre os álbuns */
+}
+
+/* Estiliza cada bloco de álbum */
+.album {
+  background-color: #ec4899;  /* Rosa vibrante */
+  padding: 1rem;              /* Espaçamento interno */
+  text-align: center;         /* Centraliza o conteúdo (texto e imagem) */
+}

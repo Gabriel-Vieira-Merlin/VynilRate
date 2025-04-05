@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma principal da página como Português do Brasil -->
+  <head>
+    <!-- Define a codificação de caracteres para suportar acentos e símbolos -->
+    <meta charset="UTF-8" />
+    
+    <!-- Define a escala de visualização para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da aba do navegador -->
+    <title>Vinylz</title>
+
+    <!-- Importa o arquivo de estilos CSS local -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Importa ícones da biblioteca Font Awesome para uso com <i class="fas fa-..."> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Cabeçalho da página contendo o título do site e a foto de perfil do usuário -->
+    <header>
+      <h1>VINYLZ</h1> <!-- Título do site -->
+      
+      <!-- Imagem de perfil do usuário -->
+      <img 
+        src="assets/fotodeperfil.jpg" 
+        alt="Foto de perfil" 
+        class="profile-pic" 
+        width="50"
+        height="50"
+      />
+    </header>
+
+    <!-- Barra de navegação com o nome da seção atual e ícones de edição e salvar -->
+    <nav>
+      <span>Na vitrola</span> <!-- Nome da seção atual -->
+      
+      <div class="icons">
+        <!-- Ícone de edição (lápis) -->
+        <i class="fas fa-pencil-alt"></i>
+
+        <!-- Ícone de salvar (disquete) -->
+        <i class="fas fa-save"></i>
+      </div>
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+      <div class="album-container">
+        <!-- Imagem da capa do álbum musical -->
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/6/67/Wish_You_Were_Here_(Pink_Floyd_album_-_cover_art).jpg"
+          alt="Capa do álbum Wish You Were Here"
+          class="album-cover"
+        />
+
+        <!-- Bloco com informações do álbum -->
+        <div class="album-info">
+          <!-- Título do álbum e nome da banda -->
+          <div class="info-title">Wish You Were Here | Pink Floyd</div>
+
+          <!-- Ano de lançamento e avaliação em estrelas -->
+          <div class="info-year">1975 | ★★★★★</div>
+
+          <!-- Lista de músicas do álbum -->
+          <div class="info-musics">
+            <p class="section-title">Músicas</p> <!-- Título da seção de músicas -->
+            
+            <!-- Lista de faixas do álbum -->
+            <ul>
+              <li class="highlight">Shine on you Crazy Diamond - 13:23</li>
+              <li class="highlight">Welcome to the Machine - 7:32</li>
+              <li>Have a Cigar - 5:08</li>
+              <li>Wish you Were Here - 5:35</li>
+            </ul>
+
+            <!-- Botão flutuante para adicionar novas músicas -->
+            <button class="add-button">
+              <i class="fas fa-plus"></i> <!-- Ícone de "+" -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

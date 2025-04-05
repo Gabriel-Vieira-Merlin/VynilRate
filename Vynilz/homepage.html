@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define o idioma da página como inglês -->
+  <head>
+    <meta charset="utf-8" /> <!-- Define o conjunto de caracteres como UTF-8 (suporta acentuação, etc.) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsividade: faz a página se adaptar à largura da tela do dispositivo -->
+    
+    <title>Vinylz</title> <!-- Título que aparece na aba do navegador -->
+
+    <!-- Link para o arquivo CSS personalizado (na pasta 'styles') -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Link para biblioteca de ícones Font Awesome (usado para ícones como lupa e filtro) -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    />
+  </head>
+
+  <body>
+    <!-- Cabeçalho do site com título e imagem de perfil -->
+    <header>
+      <h1>VINYLZ</h1> <!-- Nome do site -->
+      <img
+        src="assets/fotodeperfil.jpg"
+        alt="User profile picture"
+        class="profile-pic"
+        width="50"
+        height="50"
+      />
+    </header>
+
+    <!-- Menu de navegação principal -->
+    <nav>
+      <a href="#">Na fila</a> <!-- Link (ainda sem destino real) para a seção "Na fila" -->
+      <a href="#">Na vitrola</a> <!-- Link para a seção "Na vitrola" -->
+      <a href="#">Nas memórias</a> <!-- Link para a seção "Nas memórias" -->
+    </nav>
+
+    <!-- Área com filtros e campo de busca -->
+    <div class="filtros">
+      <i class="fas fa-filter"></i> <!-- Ícone de filtro (da Font Awesome) -->
+
+      <!-- Cabeçalho das colunas da lista de discos -->
+      <div class="colunas">
+        <span>Nome</span>
+        <span>Artista</span>
+        <span>Classificação</span>
+        <span>Gênero</span>
+        <span>Ano</span>
+      </div>
+
+      <!-- Campo de pesquisa -->
+      <div class="pesquisa">
+        <i class="fas fa-search"></i> <!-- Ícone de busca -->
+        <input type="text" placeholder="Pesquisar" /> <!-- Campo de texto para busca -->
+      </div>
+
+      <!-- Botão para adicionar novo item -->
+      <button>Adicionar +</button>
+    </div>
+
+    <!-- Conteúdo principal da página (galeria de álbuns) -->
+    <main>
+      <!-- Primeiro álbum -->
+      <div class="album">
+        <img
+          src="assets/SlipknotIowaCapa.jpg"
+          alt="Album cover of Iowa by Slipknot"
+          width="200"
+          height="200"
+        />
+        <p>Iowa | Slipknot</p> <!-- Nome do álbum e artista -->
+        <p>*****</p> <!-- Avaliação em estrelas (apenas ilustrativa) -->
+      </div>
+
+      <!-- Segundo álbum -->
+      <div class="album">
+        <img
+          src="assets/Alice_in_Chains_(album).jpg"
+          alt="Album cover of Alice in Chains by Alice in Chains"
+          width="200"
+          height="200"
+        />
+        <p>Alice in Chains | Alice in Chains</p> <!-- Nome do álbum e artista -->
+        <p>*****</p> <!-- Avaliação em estrelas -->
+      </div>
+    </main>
+  </body>
+</html>
